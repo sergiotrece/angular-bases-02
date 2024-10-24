@@ -1,0 +1,23 @@
+<h4>Agregar artista</h4>
+
+    <form class="row" (ngSubmit)="emitArtista()">
+
+      <input
+      type="text"
+      [(ngModel)]="artista.nombre"
+      name="nombre"
+      class="form-control mb-2"
+      placeholder="Nombre">
+
+      <input
+      type="number"
+      [(ngModel)]="artista.nivel"
+      name="nivel"
+      class="form-control mb-2"
+      placeholder="Nivel">
+
+      <button type="submit"
+      class="btn btn-primary"> Agregar </button>
+
+      <!-- <pre>{{ artista | json }}</pre> -->
+    </form>

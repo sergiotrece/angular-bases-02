@@ -1,0 +1,17 @@
+<h1>Artistas Argentina</h1>
+<hr>
+
+
+<div class="row">
+  <div class="col">
+    <!-- <artistas-list (onDeleteArtista)="artistaService.onDeleteArtist ($event)" [artistaLista]="artistaService.artista"></artistas-list> -->
+    <artistas-list (onDeleteArtista)="onDeleteArtista ($event)" [artistaLista]="artista"></artistas-list>
+  </div>
+
+  <div class="col">
+    <artistas-add-form (onNewArtista)="onNewArtista($event)"> </artistas-add-form>
+  </div>
+
+
+
+</div>
